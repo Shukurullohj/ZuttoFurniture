@@ -1,0 +1,463 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: #fff;
+}
+li {
+	list-style: none;
+}
+body {
+	background: #d7d8da;
+	text-align: center;
+}
+.main {
+	color: #3c2617;
+}
+
+.container {
+	margin: auto;
+	width: 350px;
+	height: 100%;
+}
+.main-page-wrapper {
+	height: 250px;
+	background: 
+	no-repeat
+	100%
+	url('https://lh3.googleusercontent.com/proxy/0S_o3epZauHaZME3-s6wnQ-wIg4n8nq4opZ3RIVBzqVvGDDB0rFwdzpycGbSWljnamdTmrmKVem0Nhwoyi-tZVPTAzH34PkXyzglY2zuHx_HRgEaZdlyBKyk4qrFmhbPVipuip3XsrswpFXV4r07rit2U1WegGI_-TCQvJac6whc20smqAyXazL0CQ');
+}
+nav {
+	width: 100%;
+	background: #b63d32;
+	padding: 10px;
+}
+nav .nav-items {
+	display: none;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #b63d32;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #ffffff;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+header img {
+	width: 50px;
+}	
+.side-logo {
+	display: none;
+}
+.header-text {
+	text-align: center;
+	font-size: 25px;
+	color: #333;
+}
+.side-logo {
+	width: 50px;
+}
+.welcome-wrapper {
+	background: 
+	no-repeat
+	left 70%
+	url('img/wood-furniture.png');
+	background-size: 25%;
+}
+.welcome-wrapper h3{
+	padding: 45px 0 10px 0;
+	color: #b63d32;	
+}
+.btn {
+	background-color: #b63d32;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 25px;
+	padding: 10px 20px 10px 20px;
+	border-radius: 50px;
+	margin: 20px;
+}
+.slide .slide-heading {
+	color:#b63d32;
+	padding: 15px; 
+}
+.slide-img {
+	width: 560px;
+	height: 420px;
+	margin: auto;
+}
+
+
+
+.delivery .delivery-heading {
+	color:#b63d32;
+	padding: 15px;
+}
+.delivery img {
+	width: 100%;
+}
+
+
+footer .contact-us {
+	position: relative;
+	padding: 50px 0 20px 0;
+	background: #3c2617;
+}
+footer .contact-us .furniture-icon {
+	position: absolute;
+	top: -5px;
+	left: 40%;
+	width: 70px;
+	height: 70px;
+}
+footer .contact-us h5 {
+	color: #fff;
+	font-size: 18px;
+}
+
+footer .social {
+	background: #b63d32;
+	padding: 30px;
+	color: #fff
+}
+footer .social .social-wrapper {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 20px;
+}
+footer .social .container {
+	display: flex;
+	justify-content: flex-end;
+}
+footer .social li {
+	padding-left: 5px;
+}
+footer .social input {
+  border:0;
+  border-bottom:1px solid #555;  
+  background:transparent;
+  width:60%;
+  padding:8px 0 5px 0;
+  font-size:16px;
+}
+
+
+
+.service .container {
+	display: block;
+	font-size: 17px;
+}
+.service .service-img{
+	width: 100%;
+}
+.service .service-text h3{
+	padding: 45px 0 10px 0;
+	font-size: 30px;
+	color: #b63d32;	
+}
+.service .container .service-text{
+	margin: auto;
+	width: 85%;
+}
+
+
+
+.about .container {
+	display: block;
+	margin: 30px auto 30px auto;
+	font-size: 17px;
+}
+.about .reverse {
+	flex-direction: row-reverse;
+	justify-content: space-between;
+}
+.about .reverse img {
+	clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+.about  .about-img {
+	margin-top: 30px;
+	margin: auto;
+	width: 200px;
+	height: 300px;
+	transition: 0.4s cubic-bezier(1, -1, 0, 2);
+	clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
+}
+.about .about-text h3{
+	padding: 20px 0 10px 0;
+	font-size: 30px;
+	color: #b63d32;	
+}
+.about .container .about-text{
+	margin: auto;
+	padding-bottom: 20px;
+}
+
+
+
+.gallery {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 40px 0 40px 0;
+}
+.gallery-wallpaper {
+	display: block;
+	background: url('https://img1.cgtrader.com/items/1844964/8fb653ec3a/johanson-ester-armchair-3d-model-max-obj-mtl-tga.jpg')
+	no-repeat
+	center center/cover;
+	height: 200px;
+	width: 400px;
+	animation: skew 3s infinite;
+	transform: skew(4deg);
+	animation-direction: alternate;
+}
+
+@keyframes skew {
+	0% {
+		transform: skew(4deg, 4deg);
+	}
+	100% {
+		transform: skew(-4deg, -4deg);
+	}
+}
+
+.contact .container {
+	display: block;
+	width: 90vw;
+}
+#map {
+	height: 400px;
+	width: 100%;
+	margin: auto;
+}
+.form {
+	margin-top: 40px;
+	width: 50%;
+}
+.form input, textarea {
+	border: none;
+	background: #3c2617;
+	padding: 10px 50px 10px 50px;
+	margin-bottom: 20px;
+}
+.form .btn {
+	padding: 5px 50px 5px 50px;
+	background: #3c2617;
+	border: none;
+}
+
+@media (min-width: 960px) {
+	body {
+		font-size: 24px;
+	}
+	header {
+		display: none;
+	}
+	.header-text {
+		padding-top: 50px;
+	}
+	.side-logo {
+		display: block;
+		margin: auto;
+		width: 100px;
+	}
+	.main-page-wrapper {
+		background: 
+		no-repeat
+		center center/cover
+		url('http://www.slicecube.com/wp-content/uploads/2017/09/bright-side-free-3d-models-furniture-slice-cube-render1-WEB.jpg');		
+		height: 90vh;
+		width: 100vw;
+		z-index: -1;
+	}
+	.container {
+		margin: auto;
+		width: 740px;
+		height: 100%;
+	}
+	.welcome-wrapper {
+		padding: 40px;
+	}
+	nav	{
+		padding: 10px;
+	}
+	nav .nav-items {
+		display: flex;
+		justify-content: space-around;
+	}
+	.nav-link {
+		padding: 20px;
+	}
+	.overlay a {
+		font-size: 20px;
+	}
+	.overlay .closebtn {
+		font-size: 40px;
+		top: 15px;
+		right: 35px;
+	}
+	
+	.fade {
+		position: relative;
+		
+	}
+	.fade::before {    
+      content: "";
+      background: 
+	  url('https://bernhardt.com/sites/default/files/bernhardt_upholstery_plush_drew_noland_whitley_banner_fall2020.jpg')
+	  no-repeat center center/cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.35;
+	  }
+	 .shadow {
+	 	background: red;
+	 	width: 270px;
+	 	position: absolute;
+	 	top: 195%;
+	 	left: 85%;
+	 	opacity: 0.3;
+	 	height: 80vh;
+	 }
+	 .shadow .text {
+	 	position: relative;
+	 	top: 35%;
+	 	text-align: left;
+	 	padding: 10px;
+	 }
+	.slide-img {
+	width: 70vw;
+	height: 80vh;
+	margin: auto;
+	position: relative;
+	opacity: 1;
+	
+	}
+	.fab {
+		font-size: 35px;
+	}
+	footer .contact-us .furniture-icon {
+		left: 47%;
+		width: 130px;
+		height: 100px;
+	}
+	footer .contact-us h5 {
+	color: #fff;
+	padding: 10px;
+	font-size: 28px;
+	}
+	footer .social input {
+		width: 30%;
+	}
+	footer p {
+		font-size: 12px;
+	}
+
+
+
+
+
+
+	.service .container {
+		display: flex;
+		justify-content: space-between;
+		width: 100vw;
+		font-size: 17px;
+	}
+	.service .reverse {
+		flex-direction: row-reverse;
+	}
+	.service .service-img{
+		width: 700px;
+	}
+
+	.service .container .service-text{
+		width: 30%;
+	}
+
+
+	.about .container {
+		display: flex;
+		margin: 60px auto 60px auto;
+		justify-content: space-between;
+		width: 1092px;
+	}
+	.about .reverse {
+		flex-direction: row-reverse;
+	}
+	.about  .about-img {
+		width: 400px;
+		height: 500px;
+	}
+	.about .container .about-text{
+		width: 400px;
+	}
+	
+
+
+
+	.contact .container {
+		display: flex;
+		justify-content: space-between;
+	}
+	#map {
+		width: 50%;
+	}
+	.form {
+		width: 50%;
+	}
+	.form input, textarea {
+		padding: 20px 100px 20px 100px;
+	}
+	.form .btn {
+		padding: 10px 100px 10px 100px;
+	}
+
+}
