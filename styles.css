@@ -303,10 +303,7 @@ footer .social input {
 		width: 100px;
 	}
 	.main-page-wrapper {
-		background: 
-		no-repeat
-		center center/cover
-		url('http://www.slicecube.com/wp-content/uploads/2017/09/bright-side-free-3d-models-furniture-slice-cube-render1-WEB.jpg');		
+		background: url('img/pages-bg/about.jpg') no-repeat center center/cover;		
 		height: 90vh;
 		width: 100vw;
 		z-index: -1;
