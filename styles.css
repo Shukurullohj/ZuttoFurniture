@@ -26,10 +26,7 @@ body {
 }
 .main-page-wrapper {
 	height: 250px;
-	background: 
-	no-repeat
-	100%
-	url('http://www.slicecube.com/wp-content/uploads/2017/09/bright-side-free-3d-models-furniture-slice-cube-render1-WEB.jpg');
+	background: url('img/pages-bg/about.jpg') no-repeat center center/cover;
 }
 nav {
 	width: 100%;
